@@ -8,7 +8,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import xyz.kp.pax.checks.impl.AutoClick;
 import xyz.kp.pax.checks.impl.FastPlace;
 import xyz.kp.pax.commands.AlertCommand;
-import xyz.kp.pax.license.LicenseManager;
 import xyz.kp.pax.listeners.PlayerListener;
 import xyz.kp.pax.listeners.UpdateListener;
 
@@ -16,10 +15,6 @@ public final class PAX extends JavaPlugin {
 
     @Override
     public void onLoad() {
-        if (!LicenseManager.checkLicense("123123123")) {
-            Bukkit.getConsoleSender().sendMessage("§c[PAX] Licença inválida.");
-            Bukkit.getPluginManager().disablePlugin(this);
-        }
         PacketEvents.create(this);
         PacketEventsSettings settings = PacketEvents.get().getSettings();
         settings
