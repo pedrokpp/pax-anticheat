@@ -1,0 +1,10 @@
+name: PAX
+version: '${project.version}'
+main: xyz.kp.pax.PAX
+authors: [ pedrokp ]
+commands:
+  alerts:
+    aliases:
+      - alert
+      - al
+    description: Ative/desative os alertas do AntiCheat
