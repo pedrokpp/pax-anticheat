@@ -34,7 +34,7 @@
                             <relocations>
                                 <relocation>
                                     <pattern>io.github.retrooper.packetevents</pattern>
-                                    <shadedPattern>xyz.kp.pax.packetevents</shadedPattern> <!--relocate packetevents package. choose something unique!-->
+                                    <shadedPattern>xyz.kp.pax.packetevents</shadedPattern>
                                 </relocation>
                             </relocations>
                         </configuration>
