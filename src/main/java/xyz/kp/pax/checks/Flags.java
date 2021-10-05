@@ -6,6 +6,7 @@ import lombok.Getter;
 public enum Flags {
     AUTOCLICK("AutoClick", 80, 3, false, false),
     FASTPLACE("FastPlace", 50, 2, false, false),
+    TIMER("Timer", 30, 5, true, false),
     ;
 
     private final String name;
