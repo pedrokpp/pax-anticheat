@@ -18,11 +18,11 @@ public class PlayerData {
 
     public int ac = 0;
     public int acT = 0;
-    public int acF = 0;
+    public int acVL = 0;
 
     public int fp = 0;
     public int fpT = 0;
-    public int fpF = 0;
+    public int fpVL = 0;
 
     public PlayerData(Player player) {
         this.player = player;
