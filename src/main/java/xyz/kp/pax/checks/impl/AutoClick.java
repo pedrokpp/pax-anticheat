@@ -38,11 +38,11 @@ public class AutoClick extends PacketListenerAbstract {
                     float cps = (float) (15.0 / delay);
 
                     if (cps >= 15) {
-                        playerData.acF++;
+                        playerData.acVL++;
 
-                        if ((playerData.acF % flag.getThreshold() == 0) &&
-                                playerData.acF >= flag.getThreshold()) {
-                            Core.alert(player, flag, playerData.acF / flag.getThreshold(),
+                        if ((playerData.acVL % flag.getThreshold() == 0) &&
+                                playerData.acVL >= flag.getThreshold()) {
+                            Core.alert(player, flag, playerData.acVL / flag.getThreshold(),
                                     String.format("%.2f", cps) + " CPS");
                         }
                     }

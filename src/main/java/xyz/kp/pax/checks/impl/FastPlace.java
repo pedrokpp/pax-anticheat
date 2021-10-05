@@ -34,11 +34,11 @@ public class FastPlace extends PacketListenerAbstract {
                 float bps = (float) (15.0 / delay);
 
                 if (bps >= 15) {
-                    playerData.fpF++;
+                    playerData.fpVL++;
 
-                    if ((playerData.fpF % flag.getThreshold() == 0) &&
-                            playerData.fpF >= flag.getThreshold()) {
-                        Core.alert(player, flag, playerData.fpF / flag.getThreshold(),
+                    if ((playerData.fpVL % flag.getThreshold() == 0) &&
+                            playerData.fpVL >= flag.getThreshold()) {
+                        Core.alert(player, flag, playerData.fpVL / flag.getThreshold(),
                                 String.format("%.2f", bps) + " BPS");
                     }
                 }
