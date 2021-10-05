@@ -7,6 +7,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import xyz.kp.pax.checks.impl.AutoClick;
 import xyz.kp.pax.checks.impl.FastPlace;
+import xyz.kp.pax.checks.impl.Timer;
 import xyz.kp.pax.commands.AlertCommand;
 import xyz.kp.pax.listeners.PlayerListener;
 import xyz.kp.pax.listeners.UpdateListener;
@@ -47,6 +48,7 @@ public final class PAX extends JavaPlugin {
         PacketEvents.get().registerListener(new UpdateListener());
         PacketEvents.get().registerListener(new AutoClick());
         PacketEvents.get().registerListener(new FastPlace());
+        PacketEvents.get().registerListener(new Timer());
         PacketEvents.get().init();
     }
 

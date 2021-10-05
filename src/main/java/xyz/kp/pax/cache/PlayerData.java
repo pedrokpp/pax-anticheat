@@ -24,6 +24,10 @@ public class PlayerData {
     public int fpT = 0;
     public int fpVL = 0;
 
+    public long timerLT = 0L;
+    public double timerBL = 0L;
+    public int timerVL = 0;
+
     public PlayerData(Player player) {
         this.player = player;
         this.uuid = player.getUniqueId();
