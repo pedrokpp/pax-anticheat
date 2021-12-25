@@ -9,6 +9,8 @@ other stuff at the moment, so I thought of making it open-source
 
 I'm not sure if I'll continue this project, so feel free to use it as you wish
 
+Huge shout-out to [packetevents](https://github.com/retrooper/packetevents) as I think this is the best packet handler
+
 ## Checks 
 
 - #### AutoClicker
